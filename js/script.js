@@ -1,11 +1,11 @@
 "use strict";
-const number=Number[`1`,`2`,`3`,`4`,`5`,`6`,`7`,`8`];
+const number=[1 , 2 , 3, 4, 5];
 console.log(number);
-let i=0;
-let risultato= (i % 2)===false;
-while (i< number && risultato===false) {
-    if (i<number && risultato==true) {
-     i++ 
-    }
-    console.log(number);
+let totale=0;
+for (let i = 0; i < number.length; i++) {
+    if (i % 2 !==0 ) {
+        totale= totale + number[i];
+    }    
 }
+
+console.log(totale);
